@@ -49,4 +49,4 @@
   - more powerful
 - JSX is not HTML, but it the pre-compile code look very close to actual HTMl
 - component name must start with an uppercase letter to avoid collision with HTML element names
-
+- react has a useState function that returns a state object and a function to change the state object

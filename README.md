@@ -50,3 +50,24 @@
 - JSX is not HTML, but it the pre-compile code look very close to actual HTMl
 - component name must start with an uppercase letter to avoid collision with HTML element names
 - react has a useState function that returns a state object and a function to change the state object
+
+## tree reconciliation
+- react's smart diffing algorithm only regenerates the DOM that _needs_ to be regenerated
+- react has the last version and the new version of the DOM in memory
+- react will only send the partial updates to the browser
+- react is declarative, removing a lot of complexity from developing user interfaces
+
+## synopsis
+- a react application is a set of reusable components
+- components are functions
+  - they take an input
+    - first object argument is props
+      - cannot be changed within the component
+    - second argument is state
+      - state can be changed within the component
+      - triggers a re-render
+  - they return an output in the form of a react element
+- reactdom library & virtual dom
+  - renders the elements in the browser
+  - intelligently re-renders elements when their in-memory state changes
+  - jsx

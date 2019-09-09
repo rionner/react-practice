@@ -1,8 +1,9 @@
 // Button functionality
 function Button() {
+  // useState() is a globally avaialable method - or hook
   // use state returns an array with two elements
   // first: a state object (getter)
-  // second: an update function (setter)
+  // second: an update function (setter)  
   // here we destructure the two elements in the array into variables
   // by passing 0 as the first argument we initialize counter at 0
   const [counter, setCounter] = useState(0);
